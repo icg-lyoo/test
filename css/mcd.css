@@ -1,0 +1,557 @@
+/* 
+    Document   : mcd-new
+    Created on : May 24, 2012, 3:01:26 PM
+    Author     : equemuel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+/* Generic Section
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+body {
+	overflow:hidden;
+}
+
+root { 
+    display: block;
+}
+
+#console{
+      width:500px;
+      height:200px;
+      background-color: #fff;
+      z-index:9999;
+      position:absolute;
+      left:0;
+      right:0;
+      color:#000;
+      overflow:scroll;
+}
+
+@font-face {
+    font-family: 'DINOTBold';
+    src: url('../font/dinot-bold-webfont.eot');    
+    src: url('../font/dinot-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/dinot-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'AkzidenzGroteskBQExtraCondeBd';
+    src: url('../font/akzidenzgrotesk-extraboldcondalt-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'AkzidenzGroteskBQCondensedBd';
+    src: url('../font/akzidenzgrotesk-boldcond-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../assets/body-bg.png);
+    background-position: top left;
+    background-repeat: repeat;
+    height:1080px;
+}
+body.three-by-two{
+    width:5760px;
+    height:2160px;
+}
+
+
+body.four-panel{
+      width:7680px;
+      height:1920px;
+}
+
+.store-closed {
+	background-color: #000;
+	width:20000px;
+	height: 20000px;
+}
+
+.splash-container{
+      background: url(../assets/mcd-splash.png);
+      background-repeat: repeat;
+      width:100%;
+      height:100%;
+}
+
+.video-container{
+    float:left;
+    height:1080px;
+}
+.fullscreenpromo{
+    display:none;
+    width:9600px;
+    height:1080px;
+}
+body.three-by-two .fullscreenpromo{
+      width:5760px;
+      height:2160px;
+}
+.video-container{
+    background-repeat: no-repeat;
+}
+div{
+    margin:0px;
+    padding:0px;
+}
+
+.clear-left{
+    clear:left;
+}
+
+.zone-container{
+    float: left;
+    height: 1080px;
+    width: 960px;
+    background: url(../assets/menu.png);
+    background-repeat:no-repeat;
+    display:none;
+}
+
+.menu-title {
+    width: 640px;
+    font-size:34px;
+    font-family: 'DINOTBold';
+}
+
+.menu-price {
+    width: 55px;
+    padding-right: 15px;
+    font-size:34px;
+    font-family: 'DINOTBold';
+}
+
+.menu-table td{
+    line-height: 35px;
+}
+
+.evm-container{
+    height: 1054px;
+    margin-top:26px;
+    float:left;
+    background-image:none !IMPORTANT;
+}
+
+.menu-desc {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'DINOTBold';
+    margin-left:6px;
+}
+
+.header-desc{
+    font-size: 24px;
+    color: #000000;
+    font-family: 'DINOTBold';
+    margin-left: 55px
+}
+
+.dollarmenu-td {
+    font-size:34px;
+    font-family: 'DINOTBold';
+	padding: 0 2px;
+}
+
+.evm{
+    float:left;
+    margin:-8px;
+}
+
+
+/*
+Styles to use when using anything above IE7
+.evm-number-red
+{
+    background-color: #BA1F24;
+
+}
+.evm-number-purple
+{
+    background-color: #732573;
+}
+.evm-number-brown
+{
+    background-color: #964e2f;
+}*/
+
+.promo-container{
+    width:960px;
+    height:556px;
+    margin-top:-556px;
+}
+
+.menu-header{
+    height:133px;
+    width:925px;
+    margin-left:3px;
+    margin-bottom: 17px;
+    margin-top: -8px;
+}
+
+.menu{
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.menu-table{
+    width:100%;
+}
+
+#dollarmenu-menu-table{
+    margin-left:-60px;
+}
+
+.splash{
+    background-image: url('../assets/mcd-splash.png');
+    display:none;
+    height:1080px;
+    width:1920px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float:left;
+}
+
+.menu-container{
+    height:100%;
+    padding: 0px 18px 0px 17px;
+    width:925px;
+}
+
+.pfe-container{
+    height:1080px;
+    width:960px;
+    background: url(../assets/pe.png);
+}
+
+.evm-number{
+    float:left;
+    border-radius: 25px 0 25px 0;
+    color:white;
+    background-repeat: no-repeat;
+    font-family: 'AkzidenzGroteskBQExtraCondeBd';
+    font-weight: bolder;
+    text-align:center;
+}
+
+.evm-title{
+    font-family: "DINOTBold";
+    letter-spacing:-1px;
+    float:left;
+    text-align: left;
+    word-wrap: break-word;
+    font-weight:bold;
+    line-height:33px;
+}
+
+.container{
+    text-align: center;
+}
+
+.price-item{
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.evm-sandwich-price-red, .evm-regular-price-red, .evm-large-price-red{
+    color: #BC2025;
+    font-family: 'AkzidenzGroteskBQExtraCondeBd';
+    text-align: center;
+    font-weight: bold;
+}
+
+.zone3{
+    background:none !important;
+}
+
+.dollarsign{
+    font-family: 'AkzidenzGroteskBQCondensedBd';
+    font-weight: normal;
+    float:left;
+	margin-right:-10px;
+}
+
+.evm-sandwich-price-purple, .evm-regular-price-purple, .evm-large-price-purple{
+    color:#732673;
+    font-family: 'AkzidenzGroteskBQExtraCondeBd';
+    font-weight: bold;
+    text-align: center;
+}
+
+.evm-sandwich-price-brown, .evm-regular-price-brown, .evm-large-price-brown{
+    color:#984e30;
+    font-family: 'AkzidenzGroteskBQExtraCondeBd';
+    font-weight: bold;
+    text-align: center;
+}
+
+.sandwich-meal-large{
+    font-family: "DINOTBold";
+    font-weight: normal;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.footnote{
+    text-align: center;
+    font-family: "DINOTBold";
+    float:left;
+}
+
+.evm-image{
+    background-position: center center;
+}
+
+.evm-spacer{
+    background-image: none !important;
+	width: auto !important;
+    /**
+    four panel dimensions: 1008 X 362 OR 672 X 362 OR 336 X 362
+    margin:                          -8px -24px            -8px -16px      -8px
+    five panel dimensions: 992 X 528 OR 496 X 528
+    margin:                          -8px -16px         -8px
+    
+    ---------------------------OR----------------------------------------------------
+    
+    four panel dimensions: 1280 X 354 OR 640 X 354 OR 320 X 354
+    five panel dimensions: 960 X 520 OR 480 X 520
+    */
+}
+
+/** 4 panel styles
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.dn-4-panel-menu-board .evm {
+    background: url("../assets/four-panel/evm.png") repeat scroll 0 0 transparent;
+    height: 362px;
+    width: 336px;
+}
+.dn-4-panel-menu-board.evm-container {
+    width: 1920px;
+}
+.dn-4-panel-menu-board .evm-number {
+    font-size: 56px;
+    height: 77px;
+    width: 73px;
+}
+.dn-4-panel-menu-board .evm-number-red {
+    background-image: url("../assets/four-panel/evm-number-red.png");
+}
+.dn-4-panel-menu-board .evm-number-purple {
+    background-image: url("../assets/four-panel/evm-number-purple.png");
+}
+.dn-4-panel-menu-board .evm-number-brown {
+    background-image: url("../assets/four-panel/evm-number-brown.png");
+}
+.dn-4-panel-menu-board .evm-image {
+    height: 302px;
+    padding: 10px 0 0 11px;
+    width: 312px;
+}
+.dn-4-panel-menu-board .evm-title {
+    font-size: 25px;
+    padding: 5px;
+    width: 220px;
+}
+.dn-4-panel-menu-board .price-item {
+    background-image: url("../assets/four-panel/price_holder.png");
+    height: 70px;
+    width: 98px;
+}
+.dn-4-panel-menu-board .price-cols-3 {
+    width: 303px;
+}
+.dn-4-panel-menu-board .container {
+    height: 68px;
+    margin: 162px auto 6px;
+    width: 305px;
+}
+.dn-4-panel-menu-board .price-rows-2 {
+    height: 140px !important;
+    margin-top: 92px !important;
+}
+.dn-4-panel-menu-board .evm-sandwich-price-red, .dn-4-panel-menu-board .evm-regular-price-red, .dn-4-panel-menu-board .evm-large-price-red, .dn-4-panel-menu-board .evm-sandwich-price-purple, .dn-4-panel-menu-board .evm-regular-price-purple, .dn-4-panel-menu-board .evm-large-price-purple, .dn-4-panel-menu-board .evm-sandwich-price-brown, .dn-4-panel-menu-board .evm-regular-price-brown, .dn-4-panel-menu-board .evm-large-price-brown {
+    font-size: 28px;
+    height: 28px;
+    margin: 8px 0 0 13px;
+    width: 70px;
+}
+.dn-4-panel-menu-board .dollarsign {
+    font-size: 23px;
+    margin-left: 0px;
+	margin-top:2px;
+}
+.dn-4-panel-menu-board .sandwich-meal-large {
+    font-size: 15px;
+    height: 24px;
+    margin: auto;
+    width: 80px;
+}
+.dn-4-panel-menu-board .footnote {
+    font-size: 13px;
+    height: 24px;
+    margin-left: 4px;
+    width: 308px;
+}
+.dn-4-panel-menu-board .long-label {
+    font-size: 13px;
+}
+.dn-4-panel-menu-board .long-evm-title {
+    font-size: 19px;
+}
+
+.dn-4-panel-menu-board .price-cols-2 {
+    width: 202px;
+}
+
+.dn-4-panel-menu-board .price-cols-1 {
+    width: 100px;
+}
+
+/* 5 panel styles and 6 panel styles
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.dn-5-panel-menu-board .evm,.dn-6-panel-menu-board .evm{
+    height: 528px;
+    width: 496px;
+  
+    background: url(../assets/five-panel/evm.png);
+}
+
+.dn-5-panel-menu-board.evm-container, .dn-6-panel-menu-board.evm-container{
+    width: 3840px;
+}
+
+.dn-5-panel-menu-board .price-rows-2, .dn-6-panel-menu-board .price-rows-2{
+    height: 206px !important;
+    margin-top: 136px !important;
+}
+
+.dn-5-panel-menu-board .evm-image, .dn-6-panel-menu-board .evm-image
+{
+    height:493px;
+    width: 446px;
+    padding: 19px 17px  0;
+}
+
+.dn-5-panel-menu-board .evm-number, .dn-6-panel-menu-board .evm-number{
+    width: 105px; 
+    height:120px;
+    font-size:5em;
+}
+
+.dn-5-panel-menu-board .evm-number-red, .dn-6-panel-menu-board .evm-number-red
+{
+    /*    background-color: #BA1F24;*/
+    background-image: url(../assets/five-panel/evm-number-red.png);
+}
+.dn-5-panel-menu-board .evm-number-purple, .dn-6-panel-menu-board .evm-number-purple
+{
+    /*    background-color: #732573;*/
+    background-image: url(../assets/five-panel/evm-number-purple.png);
+}
+.dn-5-panel-menu-board .evm-number-brown, .dn-6-panel-menu-board .evm-number-brown
+{
+    /*    background-color: #964e2f;*/
+    background-image: url(../assets/five-panel/evm-number-brown.png);
+}
+
+.dn-5-panel-menu-board .evm-title, .dn-6-panel-menu-board .evm-title
+{
+    font-size:37px;
+    padding: 5px;
+    width: 324px;
+}
+
+
+.dn-5-panel-menu-board .container, .dn-6-panel-menu-board .container
+{
+    width: 453px;
+    height: 95px;
+    margin:240px auto 0px;
+}
+
+.dn-5-panel-menu-board .price-item, .dn-6-panel-menu-board .price-item
+{
+    background-image:url('../assets/five-panel/price_holder.png'); 
+    width: 151px; 
+    height:103px;
+}
+
+.dn-5-panel-menu-board .evm-sandwich-price-red, .dn-5-panel-menu-board .evm-regular-price-red, .dn-5-panel-menu-board .evm-large-price-red, .dn-5-panel-menu-board .evm-sandwich-price-purple, .dn-5-panel-menu-board .evm-regular-price-purple, .dn-5-panel-menu-board .evm-large-price-purple, .dn-5-panel-menu-board .evm-sandwich-price-brown, .dn-5-panel-menu-board .evm-regular-price-brown, .dn-5-panel-menu-board .evm-large-price-brown, .dn-6-panel-menu-board .evm-sandwich-price-red, .dn-6-panel-menu-board .evm-regular-price-red, .dn-6-panel-menu-board .evm-large-price-red, .dn-6-panel-menu-board .evm-sandwich-price-purple, .dn-6-panel-menu-board .evm-regular-price-purple, .dn-6-panel-menu-board .evm-large-price-purple, .dn-6-panel-menu-board .evm-sandwich-price-brown, .dn-6-panel-menu-board .evm-regular-price-brown, .dn-6-panel-menu-board .evm-large-price-brown
+{
+    height: 42px;
+    width: 100px;
+    margin: 10px auto 0;
+    font-size: 42px;
+}
+
+.dn-5-panel-menu-board .dollarsign, .dn-6-panel-menu-board .dollarsign
+{
+    font-size:32px;
+    margin-top: 4px;
+    width: 18px;
+    height: 32px;
+
+}
+
+
+.dn-5-panel-menu-board .sandwich-meal-large, .dn-6-panel-menu-board .sandwich-meal-large
+{
+    font-size: 25px;
+    margin: 0px auto;
+    width: 117px;
+}
+
+
+.dn-5-panel-menu-board .footnote, .dn-6-panel-menu-board .footnote
+{
+    width: 460px; 
+    height:24px; 
+}
+
+.dn-5-panel-menu-board .price-cols-2, .dn-6-panel-menu-board .price-cols-2{
+    width:306px;
+}
+
+.dn-5-panel-menu-board .price-cols-3, .dn-6-panel-menu-board .price-cols-3{
+    width:460px;
+}
+
+.dn-5-panel-menu-board .long-label, .dn-6-panel-menu-board .long-label {
+    font-size: 16px;
+    margin-top: 1px;
+}
+.dn-5-panel-menu-board .long-evm-title, .dn-6-panel-menu-board .long-evm-title{
+    font-size:32px;
+}
+
