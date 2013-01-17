@@ -1,1 +1,0 @@
-<div class="<?php print $container['class'];?>"><?php print $content; ?></div>
